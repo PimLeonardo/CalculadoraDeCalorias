@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cal.Calc.</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/icon.png" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="assets/images/logo.png" alt="Logo CalCalc" />
+            </header>
+
+            <div class="content">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="activity_level"
+                            >Nível de atividade física</label
+                        >
+                        <select id="activity_level">
+                            <option
+                                value=""
+                                data-default
+                                disabled
+                                selected
+                            ></option>
+                            <option value="1.2">Sedentário</option>
+                            <option value="1.375">Pouca atividade</option>
+                            <option value="1.55">Atividade moderada</option>
+                            <option value="1.725">Atividade intensa</option>
+                            <option value="1.9">Atividade muito intensa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Sexo</label>
+                        <select id="gender">
+                            <option
+                                value=""
+                                data-default
+                                disabled
+                                selected
+                            ></option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Peso</label>
+                        <input type="number" id="weight" />
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Altura</label>
+                        <input type="number" id="height" />
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Idade</label>
+                        <input type="number" id="age" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">CALCULAR</button>
+                    </div>
+                </form>
+                <div class="result-container">
+                    <h2>RESULTADO</h2>
+
+                    <div class="result-content">
+                        <ul>
+                            <li>
+                                Metabolismo basal é de
+                                <strong>1450 cal</strong>
+                            </li>
+                            <li>
+                                Precisa consumir em média de
+                                <strong>1800 cal</strong>
+                                para manter o seu peso.
+                            </li>
+                            <li>
+                                Precisa consumir em média de
+                                <strong>1700 cal</strong>
+                                para perder peso.
+                            </li>
+                            <li>
+                                Precisa consumir em média de
+                                <strong>2000 cal</strong>
+                                para ganhar peso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

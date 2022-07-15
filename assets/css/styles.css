@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #171515;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #D9AFD9;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+  background: #454545;
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  color: #D9AFD9;
+  font-size: 16px;
+  padding: 0 15px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #FF7373;
+}
+
+.form-group button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #97D9E1;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+}
+
+.form-group button:hover {
+  background-color: #97D9E1;
+  box-shadow: 0px 15px 20px rgba(247, 153, 247, 0.4);
+  color: #D9AFD9;
+  transform: translateY(-7px);
+}
+
+.form-group button:active {
+  transform: translateY(-1px);
+}
+
+.form-group:last-child {
+  margin-top: 30px;
+}
+
+.result-container {
+  margin-top: 30px;
+  visibility: visibility;
+}
+
+.result-content {
+  margin-top: 10px;
+  background: #1A1A1A;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.result-content ul {
+  list-style: none;
+}
+
+.result-content ul li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.result-content ul li strong {
+  color: #FF7373;
+}
